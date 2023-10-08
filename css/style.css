@@ -46,7 +46,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   padding: 25.5px 0 25.5px 0;
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
 
   border-bottom: 1px solid var(--cornflower);
@@ -165,7 +165,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
 }
 .core-values > li {
@@ -265,7 +265,7 @@ footer {
 }
 
 .footer-deatails {
-  max-width: 1128px;
+  max-width: 1158px;
   margin: 0 auto;
 }
 
