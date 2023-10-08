@@ -7,6 +7,7 @@
   --ocean: #404bbf;
   --white: #fff;
   --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
 }
 
 body {
@@ -17,6 +18,10 @@ body {
 }
 
 /* header */
+
+header {
+  background-color: var(--white);
+}
 
 .logo {
   font-family: var(--font-family-raleway);
@@ -36,7 +41,6 @@ body {
 .logo-right {
   color: var(--navy-blue);
 }
-
 .menu {
   display: flex;
   flex-direction: row;
@@ -44,27 +48,26 @@ body {
   padding: 25.5px 0 25.5px 0;
   max-width: 1128px;
   margin: 0 auto;
-}
 
+  border-bottom: 1px solid var(--cornflower);
+  background: var(--white);
+}
 nav {
   display: flex;
   flex-direction: row;
   gap: 76px;
 }
-
 .menu > nav {
   display: flex;
   flex-direction: row;
   justify-content: start;
   width: 50%;
 }
-
 nav > .nav {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
-
 .menu > .contact-info {
   display: flex;
   flex-direction: row;
@@ -72,13 +75,11 @@ nav > .nav {
   gap: 40px;
   width: 50%;
 }
-
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 nav ul li a {
   color: var(--navy-blue);
   font-family: var(--font-family-roboto);
@@ -89,11 +90,9 @@ nav ul li a {
   letter-spacing: 0.32px;
   text-decoration-line: none;
 }
-
 nav ul li a:hover {
   color: var(--ocean);
 }
-
 nav ul li .active {
   color: var(--iris);
   font-family: var(--font-family-roboto);
@@ -103,7 +102,6 @@ nav ul li .active {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-
 .contact-info li a {
   color: var(--slate);
   font-family: var(--font-family-roboto);
@@ -114,11 +112,9 @@ nav ul li .active {
   letter-spacing: 0.32px;
   text-decoration-line: none;
 }
-
 .contact-info li a:hover {
   color: var(--ocean);
 }
-
 .hero {
   background: var(--navy-blue);
   height: 600px;
@@ -128,7 +124,6 @@ nav ul li .active {
   align-items: center;
   justify-content: center;
 }
-
 .hero > h1 {
   color: var(--white);
   text-align: center;
@@ -140,7 +135,6 @@ nav ul li .active {
   letter-spacing: 1.12px;
   margin: 0;
 }
-
 .hero > button {
   color: var(--white);
   border: 0;
@@ -157,9 +151,13 @@ nav ul li .active {
 /* header */
 
 /* main */
+main {
+  background-color: var(--white);
+}
 
 .core-values-section {
   margin-top: 120px;
+  background-color: var(--white);
 }
 .core-values,
 .services,
@@ -191,7 +189,7 @@ nav ul li .active {
   line-height: 24px; /* 150% */
   letter-spacing: 0.32px;
 }
-.services-section,
+
 .team-section {
   margin-top: 120px;
 }
@@ -212,13 +210,34 @@ nav ul li .active {
 .section-title {
   padding: 120px 0 72px 0;
 }
+h2,
+h3,
+p {
+  margin: 0;
+}
+h3 {
+  margin-bottom: 8px;
+}
 .team {
   padding-bottom: 120px;
 }
-.team > .card-name {
+.team > .team-card {
   background-color: var(--white);
+  display: inline-flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  text-align: center;
+  padding-bottom: 32px;
 }
-.team > h3 {
+.team-card > h3 {
   color: var(--navy-blue);
   font-family: var(--font-family-roboto);
   font-size: 20px;
@@ -227,7 +246,7 @@ nav ul li .active {
   line-height: 24px; /* 120% */
   letter-spacing: 0.4px;
 }
-.team > p {
+.team-card > p {
   color: var(--slate);
   font-family: var(--font-family-roboto);
   font-size: 16px;
@@ -242,9 +261,15 @@ nav ul li .active {
 /* footer */
 footer {
   background: var(--navy-blue);
+  padding: 101.5px 0 100px 0;
 }
 
-footer .logo {
+.footer-deatails {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.footer-deatails .logo {
   font-family: var(--font-family-raleway);
   font-size: 18px;
   font-style: normal;
@@ -255,15 +280,15 @@ footer .logo {
   text-decoration: none;
 }
 
-footer .logo .logo-left {
+.footer-deatails .logo .logo-left {
   color: var(--iris);
 }
 
-footer .logo .logo-right {
+.footer-deatails .logo .logo-right {
   color: var(--white);
 }
 
-footer > p {
+.footer-deatails > p {
   color: var(--cloud);
   font-family: var(--font-family-roboto);
   font-size: 16px;
@@ -271,6 +296,7 @@ footer > p {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  margin-top: 17.5px;
 }
 
 /* footer */
