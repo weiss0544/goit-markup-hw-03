@@ -21,6 +21,7 @@ body {
 
 header {
   background-color: var(--white);
+  border-bottom: 1px solid var(--cornflower);
 }
 
 .logo {
@@ -49,7 +50,7 @@ header {
   max-width: 1158px;
   margin: 0 auto;
 
-  border-bottom: 1px solid var(--cornflower);
+  /* border-bottom: 1px solid var(--cornflower); */
   background: var(--white);
 }
 nav {
@@ -300,3 +301,53 @@ footer {
 }
 
 /* footer */
+
+/* portfolio */
+
+.container {
+  max-width: 1158px;
+}
+
+.service-tags-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 96px 0 72px 0;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+.service-tags-items > li > button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  border: 1px solid var(--cornflower);
+  background: var(--cloud);
+
+  color: var(--iris);
+  text-align: center;
+  font-family: var(--font-family-roboto);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+.service-tags-items > li > button.active {
+  background-color: var(--ocean);
+  color: var(--white);
+}
